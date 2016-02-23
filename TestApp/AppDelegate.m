@@ -37,7 +37,24 @@
     [self.client addListener:self];
     [self.client subscribeToChannels: @[MY_CHANNEL] withPresence:YES];
     
+    [self configUI];
+    
     return YES;
+}
+
+- (void)configUI{
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0/255.0 green:196/255.0 blue:186/255.0 alpha:1.0]];
+
+    
+    NSShadow *shadow = [NSShadow new];
+    [shadow setShadowColor: [UIColor clearColor]];
+    [shadow setShadowOffset: CGSizeMake(0.0f, 1.0f)];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          [UIFont systemFontOfSize:17.0], NSFontAttributeName,
+                                                          [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                          shadow, NSShadowAttributeName,nil]];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -71,7 +88,8 @@
 - (void)setupLogoutRootView{
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     self.signInViewController = [mainStoryboard instantiateViewControllerWithIdentifier:NSStringFromClass([SigninViewController class])];
-    self.window.rootViewController = self.signInViewController;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.signInViewController];
+    self.window.rootViewController = nav;
 }
 
 #pragma mark - Add User

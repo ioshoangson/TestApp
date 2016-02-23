@@ -31,6 +31,7 @@
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO];
     self.navigationItem.leftBarButtonItem = self.backButton;
+    [self setTitle:@"Register"];
 }
 
 - (void)resetInputField{

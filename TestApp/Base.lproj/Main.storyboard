@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="70l-bW-pRv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="70l-bW-pRv">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Signin View Controller-->
@@ -127,36 +126,36 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Xn-eo-1pT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DV-AS-Lg4">
-                                        <rect key="frame" x="299" y="25" width="7" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="26" id="45t-Bp-RqS"/>
-                                            <constraint firstAttribute="width" constant="7" id="BfJ-pB-YAv"/>
-                                        </constraints>
-                                        <state key="normal" image="ab_menu.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spb-4Y-mQR">
-                                        <rect key="frame" x="16" y="26" width="30" height="25"/>
+                                        <rect key="frame" x="16" y="26" width="25" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="n0s-DS-UdH"/>
+                                            <constraint firstAttribute="width" constant="25" id="n0s-DS-UdH"/>
                                             <constraint firstAttribute="height" constant="25" id="ypk-a4-0MW"/>
                                         </constraints>
-                                        <state key="normal" image="menu_image.png">
+                                        <state key="normal" image="menu_right.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="showMenu:" destination="oNa-6m-Lfm" eventType="touchUpInside" id="wEm-gH-Cif"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DV-AS-Lg4">
+                                        <rect key="frame" x="277" y="26" width="43" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="45t-Bp-RqS"/>
+                                            <constraint firstAttribute="width" constant="43" id="BfJ-pB-YAv"/>
+                                        </constraints>
+                                        <state key="normal" image="menu_left.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.76862745099999996" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="106" id="IrP-BM-6JP"/>
                                     <constraint firstItem="spb-4Y-mQR" firstAttribute="top" secondItem="0Xn-eo-1pT" secondAttribute="top" constant="26" id="Ov9-M3-JcV"/>
-                                    <constraint firstAttribute="trailing" secondItem="2DV-AS-Lg4" secondAttribute="trailing" constant="14" id="S0I-y2-kMc"/>
-                                    <constraint firstItem="2DV-AS-Lg4" firstAttribute="top" secondItem="0Xn-eo-1pT" secondAttribute="top" constant="25" id="jGD-mk-aKr"/>
+                                    <constraint firstAttribute="trailing" secondItem="2DV-AS-Lg4" secondAttribute="trailing" id="S0I-y2-kMc"/>
+                                    <constraint firstItem="2DV-AS-Lg4" firstAttribute="top" secondItem="0Xn-eo-1pT" secondAttribute="top" constant="26" id="jGD-mk-aKr"/>
                                     <constraint firstItem="spb-4Y-mQR" firstAttribute="leading" secondItem="0Xn-eo-1pT" secondAttribute="leading" constant="16" id="jwu-W3-A16"/>
                                 </constraints>
                             </view>
@@ -206,7 +205,7 @@
                                     <constraint firstAttribute="width" constant="71" id="IyE-Ep-pNH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -459,13 +458,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8y-pO-Z1e">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLQ-9u-EmB">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSP-RM-Pu3">
-                                        <rect key="frame" x="305" y="11" width="7" height="25"/>
+                                        <rect key="frame" x="287" y="9" width="31" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="7" id="3UC-gO-Pir"/>
+                                            <constraint firstAttribute="width" constant="31" id="3UC-gO-Pir"/>
                                             <constraint firstAttribute="height" constant="25" id="WnG-s6-3ga"/>
                                         </constraints>
-                                        <state key="normal" image="ab_menu.png">
+                                        <state key="normal" image="menu_left.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -482,10 +487,14 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.76862745099999996" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="HSP-RM-Pu3" secondAttribute="trailing" constant="8" id="Jft-rL-tWn"/>
-                                    <constraint firstItem="HSP-RM-Pu3" firstAttribute="top" secondItem="P8y-pO-Z1e" secondAttribute="top" constant="11" id="fqz-Oy-sRV"/>
+                                    <constraint firstAttribute="trailing" secondItem="jLQ-9u-EmB" secondAttribute="trailing" id="1w9-bO-wks"/>
+                                    <constraint firstItem="jLQ-9u-EmB" firstAttribute="top" secondItem="P8y-pO-Z1e" secondAttribute="top" id="3qO-R7-TbM"/>
+                                    <constraint firstAttribute="trailing" secondItem="HSP-RM-Pu3" secondAttribute="trailing" constant="2" id="Jft-rL-tWn"/>
+                                    <constraint firstItem="HSP-RM-Pu3" firstAttribute="top" secondItem="P8y-pO-Z1e" secondAttribute="top" constant="9" id="fqz-Oy-sRV"/>
                                     <constraint firstAttribute="height" constant="44" id="g32-G5-CSB"/>
+                                    <constraint firstItem="jLQ-9u-EmB" firstAttribute="leading" secondItem="P8y-pO-Z1e" secondAttribute="leading" id="sMf-SY-8gW"/>
                                     <constraint firstItem="8FC-gR-q1z" firstAttribute="leading" secondItem="P8y-pO-Z1e" secondAttribute="leading" constant="8" id="tR9-TR-FjC"/>
+                                    <constraint firstAttribute="bottom" secondItem="jLQ-9u-EmB" secondAttribute="bottom" id="wub-Xr-zFi"/>
                                     <constraint firstItem="8FC-gR-q1z" firstAttribute="top" secondItem="P8y-pO-Z1e" secondAttribute="top" constant="9" id="yap-24-LKw"/>
                                 </constraints>
                             </view>
@@ -645,13 +654,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODm-x5-Tqo">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rct-R7-2h4">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuk-f8-Fbk">
-                                        <rect key="frame" x="305" y="11" width="7" height="25"/>
+                                        <rect key="frame" x="305" y="8" width="7" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="7" id="AW5-yY-iaC"/>
-                                            <constraint firstAttribute="height" constant="25" id="uMf-Le-LKg"/>
+                                            <constraint firstAttribute="height" constant="28" id="uMf-Le-LKg"/>
                                         </constraints>
-                                        <state key="normal" image="ab_menu.png">
+                                        <state key="normal" image="menu_right.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -673,19 +688,23 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="1Bc-gs-WNr"/>
                                     <constraint firstItem="4yg-9C-h8d" firstAttribute="top" secondItem="ODm-x5-Tqo" secondAttribute="top" constant="9" id="OlA-uy-5fh"/>
+                                    <constraint firstItem="rct-R7-2h4" firstAttribute="leading" secondItem="ODm-x5-Tqo" secondAttribute="leading" id="R0G-gN-jkE"/>
+                                    <constraint firstAttribute="trailing" secondItem="rct-R7-2h4" secondAttribute="trailing" id="aof-Dc-Bhw"/>
+                                    <constraint firstItem="rct-R7-2h4" firstAttribute="top" secondItem="ODm-x5-Tqo" secondAttribute="top" id="dwZ-Db-Qh9"/>
+                                    <constraint firstAttribute="bottom" secondItem="rct-R7-2h4" secondAttribute="bottom" id="hlv-Wi-Grp"/>
                                     <constraint firstItem="4yg-9C-h8d" firstAttribute="leading" secondItem="ODm-x5-Tqo" secondAttribute="leading" constant="8" id="irA-h0-LZD"/>
                                     <constraint firstAttribute="trailing" secondItem="Vuk-f8-Fbk" secondAttribute="trailing" constant="8" id="p8Y-HQ-CfU"/>
-                                    <constraint firstItem="Vuk-f8-Fbk" firstAttribute="top" secondItem="ODm-x5-Tqo" secondAttribute="top" constant="11" id="t2E-W0-izr"/>
+                                    <constraint firstItem="Vuk-f8-Fbk" firstAttribute="top" secondItem="ODm-x5-Tqo" secondAttribute="top" constant="8" id="t2E-W0-izr"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYy-jP-hgQ">
-                                <rect key="frame" x="117" y="196" width="87" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT VIEW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYy-jP-hgQ">
+                                <rect key="frame" x="102" y="196" width="117" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="Msx-bD-D8K"/>
+                                    <constraint firstAttribute="width" constant="117" id="Msx-bD-D8K"/>
                                     <constraint firstAttribute="height" constant="21" id="fHU-hS-MEv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -695,7 +714,7 @@
                             <constraint firstItem="ODm-x5-Tqo" firstAttribute="leading" secondItem="GcW-6o-rrU" secondAttribute="leading" id="7Dk-5a-LIH"/>
                             <constraint firstItem="ODm-x5-Tqo" firstAttribute="top" secondItem="lha-ht-G6z" secondAttribute="bottom" id="7v6-1R-QPX"/>
                             <constraint firstAttribute="centerX" secondItem="rYy-jP-hgQ" secondAttribute="centerX" id="84b-yg-Aui"/>
-                            <constraint firstAttribute="centerY" secondItem="rYy-jP-hgQ" secondAttribute="centerY" constant="77.5" id="BKG-5N-fPe"/>
+                            <constraint firstAttribute="centerY" secondItem="rYy-jP-hgQ" secondAttribute="centerY" constant="78" id="BKG-5N-fPe"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -706,8 +725,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ab_menu.png" width="9" height="33"/>
         <image name="back_icon.png" width="128" height="128"/>
-        <image name="menu_image.png" width="122" height="122"/>
+        <image name="menu_left.png" width="128" height="128"/>
+        <image name="menu_right.png" width="128" height="128"/>
     </resources>
 </document>
